@@ -1,0 +1,69 @@
+<!-- modify this form HTML and place wherever you want your form -->
+<head>
+  <title>Mikayla's Contact Form</title>
+  <link rel="stylesheet" href="../stylesheets/glass2.css" />
+</head>
+<body>
+  <form
+    id="contact-form"
+    action="https://formspree.io/f/xrgrbopw"
+    method="POST"
+  >
+    <!-- This is my heading -->
+    <h1 class="heading">Contact Form</h1>
+    <!-- Input for name -->
+    <div>
+      <div class="form-group">
+        <label class="form-label" for="name">Your name</label>
+        <input
+          class="form-input"
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Full Name"
+        />
+      </div>
+      <!-- Input for email -->
+      <div class="form-group">
+        <label class="form-label" for="email">Your email:</label>
+        <input
+          class="form-input"
+          type="email"
+          name="_replyto"
+          id="email"
+          required
+          placeholder="example@email.com"
+        />
+      </div>
+      <!-- Input for contact -->
+      <div class="form-group">
+        <label class="form-label" for="contact">Your number:</label>
+        <input
+          class="form-input"
+          type="tel"
+          name="contact"
+          id="contact"
+          min="10"
+          max="10"
+          required
+          placeholder="072 123 4567"
+        />
+      </div>
+      <!-- Input for message -->
+      <div class="form-group">
+        <label class="form-label" for="message">Your message:</label>
+        <textarea
+          class="form-input"
+          type="text"
+          name="message"
+          id="message"
+          placeholder="Type your message here"
+          style="width: 247px; height: 86px"
+        ></textarea>
+      </div>
+    </div>
+    <!-- Send button-->
+    <button class="button" type="submit">Send</button>
+  </form>
+</body>
